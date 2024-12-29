@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "roboshop-tf-eks-remote-state"
-    key    = "roboshop-vpc"
+    bucket = "roboshop-tf-aws-eks-remote-state"
+    key    = "roboshop-tf-aws-eks-vpc"
     region = "us-east-1"
-    dynamodb_table = "roboshop-tf-eks-locking"
+    dynamodb_table = "roboshop-tf-aws-eks-locking"
   }
 }
 
@@ -18,3 +18,5 @@ provider "aws" {
   # Configuration options
   region = "us-east-1"
 }
+
+

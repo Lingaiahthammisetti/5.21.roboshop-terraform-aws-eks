@@ -17,7 +17,7 @@ data "aws_ssm_parameter" "vpc_id" {
   name = "/${var.project_name}/${var.environment}/vpc_id"
 }
 
-data "aws_ami" "joindevops" {
+data "aws_ami" "rhel_info" {
 
 	most_recent      = true
 	owners = ["973714476881"]

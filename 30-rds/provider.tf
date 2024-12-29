@@ -6,11 +6,12 @@ terraform {
     }
   }
 
+ 
   backend "s3" {
-    bucket = "81s-remote-state-dev"
-    key    = "roboshop-rds-dev"
+    bucket = "roboshop-tf-aws-eks-remote-state"
+    key    = "roboshop-tf-aws-eks-rds"
     region = "us-east-1"
-    dynamodb_table = "81s-locking-dev"
+    dynamodb_table = "roboshop-tf-aws-eks-locking"
   }
 }
 
